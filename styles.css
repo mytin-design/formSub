@@ -1,0 +1,43 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+
+body {
+    background-color: blue;
+}
+
+.dataForm {
+    margin: 5pc auto 0;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    gap: .5pc;
+    background-color: #eee;
+    padding: 1pc;
+    border-radius: .2pc;
+}
+
+input {
+    height: 2.5pc;
+    width: 90%;
+    border-radius: .2pc;
+    border: none;
+    padding: 1pc 1pc;
+}
+
+textarea {
+    width: 90%;
+    border: none;
+    padding: 1pc 1pc;
+
+}
+
+
+#submit{
+    width: 30%;
+    height: 2.5pc;
+    border-radius: 10pc;
+    background-color: #ff5ffa;
+    color: white;
+    font-weight: bold;
+    margin: 2pc auto 0;
+    border: none;
+}

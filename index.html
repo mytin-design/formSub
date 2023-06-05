@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form data Submission </title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <form onsubmit="sendEmail(); reset(); return false;" action="" class="dataForm">
+        <h1>GET IN TOUCH</h1>
+        <input type="text" id="fname" name="fname" placeholder="FirstName">
+        <input type="text" id="lname" name="lname" placeholder="LastName">
+        <input type="email" id="email"  placeholder="Email">
+        <textarea name="message" id="message" rows="4" placeholder="How would you want us to help?"></textarea>
+        <button id="submit" type="submit">Send</button>
+
+    </form>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail() {
+Email.send({
+    Host : "smtp.gmail.com",
+    Username : "denismytin@gmail.com",
+    Password : "klvxglzizcruyhtb",
+    To : 'denismytin@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Help Request Form Received!",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
+</body>
+</html>
