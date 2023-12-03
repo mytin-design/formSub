@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a form submission form">
+    <meta name="description" content="S Automotives | All types of sedans, trucks, SUV's, e.t.c">
+        <title data-rh="true">Form Sub</title>
+        <link rel="alternate" href="" hreflang="x-default">
+        <link rel="alternate" href="" hreflang="en">
+        
+        <meta property="og:description" content="Form Submission">
+        <meta property="og:image-width" content="20">
+                <meta property="og:image-height" content="20">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://mytin-design.github.io/formSub/">
+        <meta property="og:site_name" content="Form Sub">
+        <!--Twitter and Facebook Opegraph Metadata-->
+        <meta name="twitter:label1" content="Form Sub">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:card" content="Form Sub">
+        <meta data-rh="true" property="twitter:title" content="Form Sub">
+
+        <meta data-rh="true" name="twitter:app:name:iphone" content="medium">
+        <meta data-rh="twitter:image:src" content="">
+        <meta data-rh="true" property="article:author" content="denismytin@gmail.com">
+        <meta data-rh="true" property="al:web:url" content="https://mytin-design.github.io/formSub/">
+
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="icon" href="./images/stannes-png.png" sizes="20x20" />
+        <link rel="icon" href="./images/stannes-png.png" sizes="32x32" />
+
+<link rel="apple-touch-icon" href="./images/stannes-png.png" />
+<meta name="msapplication-TileImage" content="" />
+    <title>Form data Submission </title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <form action="#" method="post" class="dataForm">
+        <h1>GET IN TOUCH</h1>
+        <input type="text" id="fname" name="fname" class="cpsfname cpsindata" placeholder="FirstName">
+        <input type="text" id="lname" name="lname" class="cpslname cpsindata" placeholder="LastName">
+        <input type="email" id="email" class="cpsename cpsindata"  placeholder="Email">
+        <textarea name="message" id="message" rows="4" class="cpstarea" placeholder="How would you want us to help?"></textarea>
+        <button id="cpsfsubmit" type="submit">Send</button>
+
+    </form>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail() {
+Email.send({
+    Host : "smtp.gmail.com",
+    Username : "denismytin@gmail.com",
+    Password : "klvxglzizcruyhtb",
+    To : 'denismytin@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Help Request Form Received!",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
+</body>
+</html>

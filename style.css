@@ -13,10 +13,9 @@ body {
     background-color: #eee;
     padding: 1pc;
     border-radius: .2pc;
-    text-align: center;
 }
 
-input {
+.cpsindata {
     height: 2.5pc;
     width: 90%;
     border-radius: .2pc;
@@ -24,7 +23,7 @@ input {
     padding: 1pc 1pc;
 }
 
-textarea {
+.cpstarea {
     width: 90%;
     border: none;
     padding: 1pc 1pc;
@@ -32,7 +31,7 @@ textarea {
 }
 
 
-#submit{
+#cpsfsubmit{
     width: 30%;
     height: 2.5pc;
     border-radius: 10pc;
@@ -41,4 +40,12 @@ textarea {
     font-weight: bold;
     margin: 2pc auto 0;
     border: none;
+}
+
+
+@media all and (max-width:996px) {
+    .dataForm {
+    text-align: center;
+
+    }
 }
